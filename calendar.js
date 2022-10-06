@@ -16,8 +16,8 @@ const data = [
   },
   {
     name: "Luiza",
-    color: "magenta",
-    data:{"0":true,"2":true,"4":true,"5":true}
+    color: "#d9baf5",
+    data:{"253":true,"255":true,"256":true,"259":true,"260":true,"261":true,"262":true,"263":true,"267":true,"269":true,"270":true,"274":true,"276":true,"277":true,"280":true,"281":true,"282":true,"283":true,"284":true,"287":true,"288":true,"289":true,"290":true,"291":true,"294":true,"295":true,"296":true,"297":true,"298":true,"301":true,"302":true,"303":true,"304":true,"305":true,"308":true,"309":true,"310":true,"311":true,"312":true,"317":true}
   },
   {
     name: "Rafa",
