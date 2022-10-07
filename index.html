@@ -75,6 +75,13 @@
     td:nth-child(5n+1){
       border-right: 2px solid black;
     }
+
+    tr + .active{
+      background-color: gray;
+    }
+    tr + .now {
+      background-color: bisque;
+    }
   </style>
   <script defer src="builder.js"></script>
   <script defer src="calendar.js"></script>
@@ -191,9 +198,19 @@
               const row = document.createElement("tr")
 
               const tdtime = document.createElement("td")
+              const nowH = new Date().getHours()
+              const nowM = new Date().getMinutes()
+              const matchTime =`${nowH < 10? '0' + nowH : nowH}:${nowM < 30? '00' : '30'}`
+              
               tdtime.innerText = t
+              tdtime.addEventListener("click", () => {
+                tdtime.parentElement.classList.toggle("active")
+              })
 
               row.appendChild(tdtime)
+
+              if(t === matchTime)
+                tdtime.parentElement.classList.add("now")
 
               for(let i=0; i<35; i++){
                 const td = document.createElement("td")
@@ -204,44 +221,6 @@
             })
             
           </script>
-          <!-- <tr>
-            <td>00:00</td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-            <td class="d"></td>
-          </tr> -->
         </tbody>
       </table>
     </div>
