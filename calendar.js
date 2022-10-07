@@ -6,8 +6,8 @@ const data = [
   },
   {
     name: "Carla",
-    color: "gray",
-    data:{"1":true,"2":true,"4":true,"5":true}
+    color: "#ff022d",
+    data:{"196":true,"197":true,"198":true,"200":true,"201":true,"203":true,"204":true,"205":true,"207":true,"208":true,"210":true,"211":true,"212":true,"214":true,"215":true,"217":true,"218":true,"219":true,"221":true,"222":true,"224":true,"225":true,"226":true,"228":true,"229":true,"231":true,"232":true,"233":true,"235":true,"236":true,"238":true,"239":true,"240":true,"242":true,"243":true,"245":true,"246":true,"247":true,"249":true,"250":true,"252":true,"253":true,"254":true,"256":true,"257":true,"259":true,"260":true,"261":true,"263":true,"264":true,"266":true,"267":true,"268":true,"270":true,"273":true,"274":true,"275":true,"276":true,"277":true,"280":true,"281":true,"282":true,"283":true,"284":true,"287":true,"288":true,"289":true,"290":true,"291":true,"294":true,"295":true,"296":true,"297":true,"298":true,"301":true,"302":true,"303":true,"304":true,"305":true,"311":true}
   },
   {
     name: "Carlos",
@@ -30,4 +30,8 @@ const ds = document.querySelectorAll(".d")
 ds.forEach((d, i) => {
   if(data[i%5].data[`${Math.floor(i/5)}`])
     d.style.backgroundColor= data[i%5].color
+})
+
+data.forEach((p) => {
+  console.log(`${p.name}: ${(Object.entries(p.data).length/2).toFixed(1)}h`)
 })

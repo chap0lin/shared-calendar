@@ -1,4 +1,3 @@
-console.log("dalee")
 var showBuilder = false
 document.getElementById("builder-collapsible").addEventListener("click", () => {
   showBuilder = !showBuilder
@@ -10,9 +9,6 @@ document.getElementById("builder-collapsible").addEventListener("click", () => {
 })
 
 const checks = document.querySelectorAll("input[type=checkbox]")
-console.log(checks.length)
-// checks[0].addEventListener("")
-
 
 function getFormattedOutput(){
   var data = {}
