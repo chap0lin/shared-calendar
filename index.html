@@ -82,6 +82,9 @@
     tr + .now {
       background-color: bisque;
     }
+    td + .date{
+      background-color: darksalmon;
+    }
   </style>
   <script defer src="builder.js"></script>
   <script defer src="calendar.js"></script>
@@ -200,6 +203,7 @@
               const tdtime = document.createElement("td")
               const nowH = new Date().getHours()
               const nowM = new Date().getMinutes()
+              const nowD = new Date().getUTCDay()
               const matchTime =`${nowH < 10? '0' + nowH : nowH}:${nowM < 30? '00' : '30'}`
               
               tdtime.innerText = t
@@ -215,6 +219,8 @@
               for(let i=0; i<35; i++){
                 const td = document.createElement("td")
                 td.classList.add("d")
+                if(Math.floor(i/5) === nowD-1)
+                  td.classList.add("date")
                 row.appendChild(td)
               }
               cbody.appendChild(row)
