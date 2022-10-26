@@ -22,7 +22,7 @@ const data = [
   {
     name: "Rafa",
     color: "#800080",
-    data:{"126":true,"128":true,"130":true,"131":true,"133":true,"135":true,"137":true,"138":true,"140":true,"142":true,"144":true,"145":true,"147":true,"149":true,"151":true,"152":true,"154":true,"156":true,"158":true,"161":true,"163":true,"165":true,"185":true,"192":true,"196":true,"197":true,"198":true,"199":true,"200":true,"203":true,"204":true,"205":true,"206":true,"207":true,"210":true,"211":true,"212":true,"213":true,"214":true,"217":true,"218":true,"219":true,"221":true,"224":true,"225":true,"226":true,"228":true,"231":true,"232":true,"233":true,"235":true,"239":true,"242":true,"246":true,"248":true,"249":true,"253":true,"255":true,"260":true,"262":true}
+    data:{"126":true,"128":true,"130":true,"131":true,"133":true,"135":true,"137":true,"138":true,"140":true,"142":true,"144":true,"145":true,"147":true,"149":true,"151":true,"152":true,"154":true,"156":true,"158":true,"161":true,"163":true,"165":true,"168":true,"170":true,"172":true,"197":true,"199":true,"203":true,"204":true,"205":true,"206":true,"207":true,"210":true,"211":true,"212":true,"213":true,"214":true,"217":true,"218":true,"219":true,"221":true,"224":true,"225":true,"226":true,"228":true,"231":true,"232":true,"233":true,"235":true,"239":true,"242":true,"246":true,"249":true,"253":true,"256":true,"259":true,"260":true,"261":true,"262":true,"263":true}
   },
 ]
 
